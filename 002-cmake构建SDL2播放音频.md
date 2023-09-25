@@ -30,7 +30,17 @@
 ## c语言链接上面的dll，实现播放指定音频
 * ```
     # gcc 编译命令
-    gcc test.c -o test.exe -ID:\.important\myCmake\002-test\SDL-release-2.28.3\include -LD:\.important\myCmake\002-test\SDL-release-2.28.3\build\Debug -lSDL2d
+    gcc test.c -o test.exe 
+    -ID:\.important\myCmake\002-test\SDL-release-2.28.3\include 
+    -LD:\.important\myCmake\002-test\SDL-release-2.28.3\build\Debug 
+    -lSDL2d
+
+    # 优化
+    gcc test.c -o test.exe 
+    -ID:\.important\myCmake\002-test\SDL-release-2.28.3\include 
+    -L./
+    -lSDL2d
+    
 * c源码
 * ```
     #include <SDL.h>

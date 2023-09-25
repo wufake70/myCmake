@@ -90,11 +90,17 @@
     # gcc编译
     gcc test.c -o test.exe 
     -ID:\.important\myCmake\003-test\SDL_mixer-release-2.6.3\include
-    -LD:\.important\myCmake\003-test\SDL_mixer-release-2.6.3\build\Debug
     -ID:\.important\myCmake\002-test\SDL-release-2.28.3\include
+    -LD:\.important\myCmake\003-test\SDL_mixer-release-2.6.3\build\Debug
     -LD:\.important\myCmake\002-test\SDL-release-2.28.3\build\Debug
     -lSDL2d -lSDL2_mixerd
     # 注意需要指定SDL2的include目录、SDL2d.dll文件地址
+
+    # 优化
+    gcc test.c -o test.exe 
+    -ID:\.important\myCmake\003-test\SDL_mixer-release-2.6.3\include
+    -ID:\.important\myCmake\002-test\SDL-release-2.28.3\include
+    -L./ -lSDL2d -lSDL2_mixerd
 * ```
     # C源代码
     #include <SDL.h>
