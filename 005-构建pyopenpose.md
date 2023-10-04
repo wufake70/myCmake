@@ -43,7 +43,7 @@
     
 * `清空build文件夹，打开cmake-gui，定位source code地址和binary build地址。`
 * 如果存在多个python解释器，点击 `Add entry`，指定`python3.8.8`的路径，`目前支持3.8.8，3.10.6不行`。
-* ![]()
+* ![](./004-Openpose/2023-10-04_160003.png)
 * 再点击 `Configure`，generator 选择`visual studio x`，在选择 `x64`，完事点击 `finish`。
 * 因为需要构建pyopenpose，勾选 `BUILD_PYTHON`，再点击 `configure`，之后继续点击 `generate`。
 * 以上步骤没有弹窗报错，即可点击 `Open Project`。
